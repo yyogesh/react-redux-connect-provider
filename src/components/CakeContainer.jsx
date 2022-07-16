@@ -11,13 +11,13 @@ const CakeContainer = (props) => {
     )
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = state => { // redux state ===> component props 
     return {
         numOfCakes: state.numOfCakes
     }
 }
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = dispatch => { // sending from component to redux
     return {
         buyCake: () => dispatch(buyCake())
     }
